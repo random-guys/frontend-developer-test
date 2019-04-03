@@ -6,6 +6,9 @@
   "author": "Vhaos <kareemdaggash@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "ts-node ./app"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "http-errors": "^1.7.2"
