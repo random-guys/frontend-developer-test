@@ -10,8 +10,11 @@
     "start": "ts-node ./app"
   },
   "dependencies": {
+    "debug": "~2.6.9",
     "express": "^4.16.4",
-    "http-errors": "^1.7.2"
+    "express-fileupload": "^0.4.0",
+    "http-errors": "^1.7.2",
+    "morgan": "~1.9.0"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",
