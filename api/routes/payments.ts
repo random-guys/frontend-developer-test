@@ -1,6 +1,6 @@
 import * as express from 'express'
 
-import { expenses } from '../data/expenses'
+import { payments } from '../data/payments'
 import { UploadedFile } from 'express-fileupload';
 import { dirname } from 'path';
 
@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
   const offset = parseInt(req.query.offset) || 0
 
   res.send({
-    expenses: expenses
+    payments: payments
       .sort((a, b) => {
         const valA = Date.parse(a.date)
         const valB = Date.parse(b.date)
@@ -25,32 +25,32 @@ router.get('/', (req, res) => {
         return 0
       })
       .slice(offset, offset + limit)
-      .map((expense, index) => {
+      .map((payment, index) => {
         return {
-          ...expense,
+          ...payment,
           index: offset + index
         }
       }),
-    total: expenses.length
+    total: payments.length
   })
 })
 
 router.get('/:id', (req, res) => {
-  const expense = expenses.find((expense) => expense.id === req.params.id)
+  const payment = payments.find((payment) => payment.id === req.params.id)
 
-  if (expense) {
-    res.send(expense)
+  if (payment) {
+    res.send(payment)
   } else {
     res.status(404)
   }
 })
 
 router.put('/:id', (req, res) => {
-  const expense = expenses.find((expense) => expense.id === req.params.id)
+  const payment = payments.find((payment) => payment.id === req.params.id)
 
-  if (expense) {
-    expense.comment = req.body.comment || expense.comment
-    res.status(200).send(expense)
+  if (payment) {
+    payment.comment = req.body.comment || payment.comment
+    res.status(200).send(payment)
   } else {
     res.status(404)
   }
@@ -62,20 +62,20 @@ router.post('/:id/receipts', (req, res) => {
   }
 
   const id = req.params.id
-  const expense = expenses.find((expense) => expense.id === id)
+  const payment = payments.find((payment) => payment.id === id)
 
-  if (expense) {
+  if (payment) {
     const receipt = req.files.receipt as UploadedFile
-    const receiptId = `${id}-${expense.receipts.length}`
+    const receiptId = `${id}-${payment.receipts.length}`
     receipt.mv(`${process.cwd()}/receipts/${receiptId}`, (err) => {
       if (err) {
         return res.status(500).send(err);
       }
    
-      expense.receipts.push({
+      payment.receipts.push({
         url: `/receipts/${receiptId}`
       })
-      res.status(200).send(expense)
+      res.status(200).send(payment)
     })
 
   } else {

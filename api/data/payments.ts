@@ -1,4 +1,4 @@
-interface Expense {
+interface Payment {
   id: string;
   amount: {
     value: string,
@@ -16,7 +16,7 @@ interface Expense {
   };
 }
 
-export const expenses: Expense[] = [
+export const payments : Payment[] = [
   {
     id: '5b995dff2e3cb74644948a66',
     amount: {

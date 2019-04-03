@@ -4,7 +4,7 @@ import * as createError from 'http-errors'
 import * as path from 'path'
 import * as logger from 'morgan'
 
-import expensesRouter from './routes/expenses'
+import paymentsRouter from './routes/payments'
 
 const app = express()
 
@@ -23,7 +23,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use('/receipts', express.static(path.join(__dirname, 'receipts')))
 
-app.use('/expenses', expensesRouter)
+app.use('/payments', paymentsRouter)
 
 app.use(function(req, res, next) {
   next(createError(404))
