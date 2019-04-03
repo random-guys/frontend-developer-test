@@ -17,50 +17,50 @@ yarn start
 
 API is now running at `http://localhost:3000`
 
-# Expenses API Documentation
+# Payments API Documentation
 
-## 1. Listing expenses
+## 1. Listing payments
 ---
 
 ```
-GET /expenses
+GET /payments
 ```
 
 #### Query parameters:
-- `limit`: number of expenses to fetch.
-- `offset`: number of expenses to skip, for pagination.
+- `limit`: number of payments to fetch.
+- `offset`: number of payments to skip, for pagination.
 
 #### Example:
 
 ```
-GET /expenses?limit=25&offset=25
+GET /payments?limit=25&offset=25
 ```
-This query gets the second page of 25 expenses.
+This query gets the second page of 25 payments.
 
-## 2. Get a single expense by ID
+## 2. Get a single payment by ID
 ---
 ```
-GET /expenses/:id
+GET /payments/:id
 ```
 #### Path parameters:
-- `id`: The id of the expense to get
+- `id`: The id of the payment to get
 
-## 3. Updating an expense
+## 3. Updating an payment
 ---
 ```
-PUT /expenses/:id
+PUT /payments/:id
 ```
 #### Path parameters:
-- `id`: The id of the expense to update
+- `id`: The id of the payment to update
 
 #### Body parameters:
-- `comment`: The comment to set on an expense
+- `comment`: The comment to set on an payment
 
 
-## 4. Uploading a receipt to an expense
+## 4. Uploading a receipt to an payment
 ---
 ```
-POST /expenses/:id/receipts
+POST /payments/:id/receipts
 ```
 #### Form parameters:
-- `receipt`: The file to add to the expense
+- `receipt`: The file to add to the payment
