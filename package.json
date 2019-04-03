@@ -1,0 +1,20 @@
+{
+  "name": "frontend-developer-test",
+  "version": "1.0.0",
+  "description": "Front-end developer test for the Sterling Product Org",
+  "main": "index.js",
+  "author": "Vhaos <kareemdaggash@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-errors": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/express-fileupload": "^0.4.0",
+    "@types/http-errors": "^1.6.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1"
+  }
+}
