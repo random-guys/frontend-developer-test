@@ -1,66 +1,51 @@
-Note:
+# Front-end challenge
+Implement an expenses list fetching all expenses from the provided API. Allow the user to add notes and upload receipt pictures to each expense.
 
-> The API stores the changes in memory, as well as receipts in the receipts folder, restarting the API server will wipe all changes.
+Please head over to the `api/` folder for implementation and starting up the API
 
-# Running the API
+## Functional requirements
+- User can list expenses
+- User can add a comment on an expense
+- User can filter expenses (client side filters)
+- User can add an image of a receipt to an expense
 
-To run the api for testing locally simply use the commands:
-```sh
-npm install
-npm start
-```
-If you use Yarn rather than npm you can also run:
-```sh
-yarn
-yarn start
-```
+## General requirements
+A single page application using a modern JS library/framework including:
+- A visually pleasing experience, you don’t have to be a designer but you must have put an effort into making this look good
+- A "componentized" approach, split your code into small building blocks, showcase your clean architecture skills.
+- CSS can be written using PostCSS, SASS, LESS or similar higher-level language
+- The use of any libraries or frameworks as long as you can explain to us why you chose them.
+- A brief description of your project. How long did it take? Which part was the hardest to implement? What functionalities are you most proud of?
 
-API is now running at `http://localhost:3000`
+## Nice to have
+Want to go the extra mile? Here's few suggestion of things we'd like to see (or go crazy and implement what you think will impress us).
+- Responsive design
+- Implement with a state management library (Redux, Mobx, VueX, ...)
+- Implement solution in TypeScript
+- Localization: support for multiple languages (English, French, ...)
 
-# Expenses API Documentation
+## What we're looking for
+- Using high-quality existing libraries or small amounts of custom code
+- Production grade code (clean, maintainable, reusable code)
+- Showing your work through your commit history
+- Polish and visual creativity
+- Pride in craftsmanship
 
-## 1. Listing expenses
----
+# Our Stack & Styles
+We encourage you to be creative. We don't want technology to limit that creativity. What follows is some detail about our stack and style guide
 
-```
-GET /expenses
-```
+**It is important to note that you are by no means required to use this stack or follow this limited style guide**
 
-#### Query parameters:
-- `limit`: number of expenses to fetch.
-- `offset`: number of expenses to skip, for pagination.
+### Stack
+- React
+- Vue + Vuex 
+- Sass
 
-#### Example:
+### Styles
+to do
 
-```
-GET /expenses?limit=25&offset=25
-```
-This query gets the second page of 25 expenses.
-
-## 2. Get a single expense by ID
----
-```
-GET /expenses/:id
-```
-#### Path parameters:
-- `id`: The id of the expense to get
-
-## 3. Updating an expense
----
-```
-PUT /expenses/:id
-```
-#### Path parameters:
-- `id`: The id of the expense to update
-
-#### Body parameters:
-- `comment`: The comment to set on an expense
-
-
-## 4. Uploading a receipt to an expense
----
-```
-POST /expenses/:id/receipts
-```
-#### Form parameters:
-- `receipt`: The file to add to the expense
+## Extra Bonus Points
+The following items will earn you bonus points. They are not requirements, the challenge is 100% completeable without them. 
+- Use our stack
+- Use our styles
+- Include animation / Micro-interactions
