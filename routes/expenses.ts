@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
   }
 })
 
-router.post('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   const expense = expenses.find((expense) => expense.id === req.params.id)
 
   if (expense) {

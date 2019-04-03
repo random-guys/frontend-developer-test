@@ -37,7 +37,7 @@ GET /expenses?limit=25&offset=25
 ```
 This query gets the second page of 25 expenses.
 
-## 2. Get an expense by ID
+## 2. Get a single expense by ID
 ---
 ```
 GET /expenses/:id
@@ -48,7 +48,7 @@ GET /expenses/:id
 ## 3. Updating an expense
 ---
 ```
-POST /expenses/:id
+PUT /expenses/:id
 ```
 #### Path parameters:
 - `id`: The id of the expense to update
