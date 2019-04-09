@@ -46,3 +46,10 @@ We encourage you to be creative. We don't want technology to limit that creativi
 The following items will earn you bonus points. They are not requirements, the challenge is 100% completeable without them. 
 - Use our stack
 - Include animation / Micro-interactions
+
+## Submission
+When you feel you're ready to submit, simply share a link to your github repo with a member of the product org team; or whoever first contacted you. Please make sure your repo is set to public otherwise we won't be able to see all your hard work! 
+
+please try to submit the included `api/` folder as is, in the root folder of your repo. This let's us start up the API quickly before taking a look at your work. 
+
+Finally, we'd like to say *Good luck! And have fun!*
