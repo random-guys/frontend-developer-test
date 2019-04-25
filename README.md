@@ -21,7 +21,7 @@ A single page application using a modern JS library/framework (React/Vue/Angular
 Want to go the extra mile? Here's few suggestion of things we'd like to see (or feel free to just go crazy and implement what you think will impress us).
 - Responsive design
 - Implement with a state management library (VueX, Redux, Mobx, ...)
-- Implement solution in TypeScript
+- Implement your solution in TypeScript
 - Localization: support for multiple languages (English, French, ...)
 
 ## What we're looking for
@@ -32,14 +32,13 @@ Want to go the extra mile? Here's few suggestion of things we'd like to see (or 
 - Pride in craftsmanship
 
 # Our Stack & Styles
-We encourage you to be creative. We don't want technology to limit that creativity. What follows is some detail about our stack and style guide
+We encourage you to be creative. We don't want technology to limit that creativity. What follows is some detail about the tech stack we use.
 
-**It is important to note that you are by no means required to use this stack and feel free to use whichever tools **
+**It is important to note that you are by no means required to use this stack and feel free to use whichever tools**
 
 ### Stack
 - Yarn (for package management)
-- React
-- Vue + Vuex 
+- React + redux || Vue + Vuex 
 - Sass
 
 ## Extra Bonus Points
