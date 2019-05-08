@@ -7,7 +7,7 @@ The `api/` folder contains more detail on starting up the API locally and its im
 - User can view a list of their payments
 - User can add a comment on an payment
 - User can filter payments (client side filters)
-- User can upload and add an image of a receipt to an payment
+- User can upload and add an image of a receipt to a payment
 
 ## General requirements
 A single page application using a modern JS library/framework (React/Vue/Angular) featuring:
@@ -26,7 +26,7 @@ Want to go the extra mile? Here's few suggestion of things we'd like to see (or 
 
 ## What we're looking for
 - Using high-quality existing libraries or small amounts of custom code
-- Production grade code (clean, maintainable, reusable code)
+- Production grade code (clean, maintainable, commentted, reusable code)
 - A detailed commit history shows your progress towards your final implementation
 - Polish and visual creativity
 - Pride in craftsmanship
@@ -34,7 +34,7 @@ Want to go the extra mile? Here's few suggestion of things we'd like to see (or 
 # Our Stack & Styles
 We encourage you to be creative. We don't want technology to limit that creativity. What follows is some detail about the tech stack we use.
 
-**It is important to note that you are by no means required to use this stack and feel free to use whichever tools**
+**It is important to note that you are by no means required to use this stack and feel free to use whichever tools you feel are best suited to the job, provided you can justify your choices**
 
 ### Stack
 - Yarn (for package management)
