@@ -10,7 +10,7 @@ The `api/` folder contains more detail on starting up the API locally and its im
 - User can upload and add an image of a receipt to a payment
 
 ## General requirements
-A single page application using a modern JS library/framework (React/Vue/Angular) featuring:
+A single page application using a modern JS library/framework (preferably React or Vue) featuring:
 - A visually pleasing experience, you don’t have to be a designer but you must have put an effort into making this look good
 - A "componentized" approach, split your code into small building blocks, showcase your clean architecture skills.
 - CSS can be written using PostCSS, SASS, LESS or similar higher-level language
