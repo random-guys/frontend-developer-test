@@ -46,6 +46,9 @@ The following items will earn you bonus points. They are not requirements, the c
 - Use our stack
 - Include animation / Micro-interactions
 
+## Time Duration
+Maximum of 4 days
+
 ## Submission
 When you feel you're ready to submit, simply share a link to your github repo with a member of the product org team; or whoever first contacted you. Please make sure your repo is set to public otherwise we won't be able to see all your hard work! 
 
